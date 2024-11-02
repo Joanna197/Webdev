@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Survey Form</title>
+    <link rel="stylesheet" href="format.css">
+  </head>
+  <body>
+    <form action="#" method="post">
+      <h2>Music Survey</h2>
+
+      <!-- Name -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
+
+      <!-- Email -->
+      <label for="email">E-mail:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email address"
+      />
+
+      <!-- Favorite Types of Music -->
+      <fieldset>
+        <legend>Select Your Favorite Types of Music:</legend>
+        <label
+          ><input type="checkbox" name="music_type" value="pop" /> Pop</label
+        >
+        <label
+          ><input type="checkbox" name="music_type" value="classical" />
+          Classical</label
+        >
+        <label
+          ><input type="checkbox" name="music_type" value="rock" /> Rock</label
+        >
+        <label
+          ><input type="checkbox" name="music_type" value="folk" /> Folk</label
+        >
+        <label
+          ><input type="checkbox" name="music_type" value="rap" /> Rap</label
+        >
+        <label
+          ><input type="checkbox" name="music_type" value="other" />
+          Other</label
+        >
+      </fieldset>
+
+      <!-- How Often You Purchase Music -->
+      <fieldset>
+        <legend>Select how often you purchase Music:</legend>
+        <label
+          ><input type="radio" name="purchase_frequency" value="weekly" />
+          Weekly</label
+        >
+        <label
+          ><input type="radio" name="purchase_frequency" value="few_year" /> A
+          few CDs each year</label
+        >
+        <label
+          ><input type="radio" name="purchase_frequency" value="monthly" />
+          Monthly</label
+        >
+        <label
+          ><input type="radio" name="purchase_frequency" value="never" /> Never
+          purchase</label
+        >
+      </fieldset>
+
+      <!-- Select Listening Locations -->
+      <fieldset>
+        <legend>Select the locations you listen to Music:</legend>
+        <select name="listening_location" size="3">
+          <option value="home">At home</option>
+          <option value="car">In the car</option>
+          <option value="anywhere">Anywhere</option>
+        </select>
+      </fieldset>
+
+      <!-- Text Area: Role of Music in Life -->
+      <label for="role_of_music">What role does music play in your life?</label>
+      <textarea id="role_of_music" name="role_of_music" rows="3"></textarea>
+
+      <!-- Submit and Reset Buttons -->
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>

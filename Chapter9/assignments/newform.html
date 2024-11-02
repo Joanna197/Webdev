@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Form</title>
+  <link rel="stylesheet" href="format.css">
+</head>
+<body>
+  <h2>Form</h2>
+
+  <form action="/submit" method="POST">
+    <fieldset>
+      <legend>Vote for Your Favorite Day of the Week</legend>
+      <label><input type="radio" name="day" value="Monday"> Monday</label><br>
+      <label><input type="radio" name="day" value="Tuesday"> Tuesday</label><br>
+      <label><input type="radio" name="day" value="Wednesday"> Wednesday</label><br>
+      <label><input type="radio" name="day" value="Thursday"> Thursday</label><br>
+      <label><input type="radio" name="day" value="Friday"> Friday</label><br>
+      <label><input type="radio" name="day" value="Saturday"> Saturday</label><br>
+      <label><input type="radio" name="day" value="Sunday"> Sunday</label><br>
+    </fieldset>
+
+    <!-- Select List for Favorite Social Networking Site -->
+    <fieldset>
+      <legend>Favorite Social Networking Site</legend>
+      <label for="social-network">Select your favorite:</label><br>
+      <select id="social-network" name="social-network">
+        <option value="facebook">Facebook</option>
+        <option value="twitter">Twitter</option>
+        <option value="instagram">Instagram</option>
+        <option value="linkedin">LinkedIn</option>
+        <option value="tiktok">TikTok</option>
+      </select><br><br>
+    </fieldset>
+
+    <!-- Shipping Address Fieldset with Legend -->
+    <fieldset>
+      <legend>Shipping Address</legend>
+      <label for="address1">Address Line 1:</label><br>
+      <input type="text" id="address1" name="address1"><br><br>
+
+      <label for="address2">Address Line 2:</label><br>
+      <input type="text" id="address2" name="address2"><br><br>
+
+      <label for="city">City:</label><br>
+      <input type="text" id="city" name="city"><br><br>
+
+      <label for="state">State:</label><br>
+      <input type="text" id="state" name="state"><br><br>
+
+      <label for="zip">Zip Code:</label><br>
+      <input type="text" id="zip" name="zip"><br><br>
+    </fieldset>
+
+    <!-- Image Button -->
+    <fieldset>
+      <legend>Sign up</legend>
+      <input type="image" src="signup.gif" alt="Submit" name="submit" width="100" height="50"><br><br>
+    </fieldset>
+
+    <!-- Hidden Input Control -->
+    <input type="hidden" name="userid" value="12345">
+
+    <!-- Password Box -->
+    <fieldset>
+      <legend>Password</legend>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="pword"><br><br>
+    </fieldset>
+    <input type="submit" value="Submit Form">
+  </form>
+
+  <footer>
+    <p>Created by: Joanna Gonzalez</p>
+    <p>Email: jgonzalez2@mail.lipscomb.edu</p>
+  </footer>
+
+</body>
+</html>
